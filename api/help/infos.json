@@ -1,0 +1,30 @@
+[
+	{
+		"metodo": "GET",
+		"endpoint": "/v1/getlocais",
+		"retorno": "[<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;\"id\": \"1\",<br>&nbsp;&nbsp;&nbsp;&nbsp;\"nome\": \"Bomba Burguer\",<br>&nbsp;&nbsp;&nbsp;&nbsp;\"tipo\": \"HAMBURGUERIA\",<br>&nbsp;&nbsp;&nbsp;&nbsp;\"data\": 1539054000<br>&nbsp;&nbsp;}<br>]",
+		"parametros": "<br><b>tipo</b> (opcional): Tipo de local;<br><br>Tipos possíveis:<br>- RESTAURANTE<br>- HAMBURGUERIA<br>- PIZZARIA<br>- OUTROS<br><br>",
+		"request": "?tipo=HAMBURGUERIA"
+	},
+	{
+		"metodo": "GET",
+		"endpoint": "/v1/setlocais",
+		"retorno": "null",
+		"parametros": "<br><b>nome</b> (obrigatório): Nome do local;<br><b>tipo</b> (obrigatório): Tipo de local;<br><br>",
+		"request": "?nome=Restaurante&tipo=RESTAURANTE"
+	},
+	{
+		"metodo": "GET",
+		"endpoint": "/v1/getsalas",
+		"retorno": "{<br>&nbsp;&nbsp;\"id\": \"1234\",<br>&nbsp;&nbsp;\"data\": 1539054000,<br>&nbsp;&nbsp;\"locais\": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"id\": \"1\",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"nome\": \"Bomba Burguer\",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"tipo\": \"HAMBURGUERIA\",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"data\": 1539054000<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}",
+		"parametros": "<br><b>sala</b> (obrigatório): Número da sala;<br><br>",
+		"request": "?sala=1234"
+	},
+	{
+		"metodo": "GET",
+		"endpoint": "/v1/setsalas",
+		"retorno": "{<br>&nbsp;&nbsp;\"id\": \"1234\",<br>&nbsp;&nbsp;\"data\": 1539054000,<br>&nbsp;&nbsp;\"locais\": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"id\": \"1\",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"nome\": \"Bomba Burguer\",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"tipo\": \"HAMBURGUERIA\",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"data\": 1539054000<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}",
+		"parametros": "<br><b>locais</b> (obrigatório): IDs de todos os locais desejados<br>separados por vírgulas (sem espaços);<br><br>",
+		"request": "?locais=1,2,3"
+	}
+]
