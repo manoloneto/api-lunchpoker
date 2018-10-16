@@ -50,7 +50,7 @@
 			while($item = mysqli_fetch_array($r, MYSQLI_ASSOC)){
 				$local = array();
 				$local['id'] = $item['id'];
-				$local['nome'] = $item['nome'];
+				$local['nome'] = html_entity_decode($item['nome'],ENT_QUOTES);
 				$local['tipo'] = $item['tipo'];
 				$local['data'] = strtotime($item["data"]);
 

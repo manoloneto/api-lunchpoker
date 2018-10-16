@@ -2,7 +2,7 @@
 
 	$projeto = "Lunch Poker";
 
-	$dominio = "http://mydomain.com";
+	$dominio = "http://dev.hillstech.co/lunchpoker";
 	$base = "/api";
 
 	//pegando o conteúdo do .json para a variável 

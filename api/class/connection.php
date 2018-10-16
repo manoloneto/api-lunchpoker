@@ -6,9 +6,9 @@
 		function open()
 		{
 			$server = "localhost";
-			$usuario = "USERNAME";
-			$senha = "PASSWORD";
-			$banco = "DATABASE";
+			$usuario = "hills981_lunch";
+			$senha = "batatadoce";
+			$banco = "hills981_poker";
 			
 			return new mysqli($server, $usuario, $senha, $banco);
 		}
